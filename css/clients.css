@@ -1,0 +1,18 @@
+.clients {
+  padding: 30px 15px;
+  background: inherit;
+}
+
+/* .clients__wrapper {} */
+
+.clients__title {
+  display: none;
+}
+
+.clients__brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* .clients__brand {} */
