@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *   ,
+ * 9 |     font-family: $family;
+ *   |                  ^^^^^^^
+ *   '
+ *   scss\utils\mixins.scss 9:18  font-face()
+ *   scss\config\fonts.scss 4:1   @import
+ *   scss\index.scss 4:9          root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 9 \2502      font-family: $family;\d\a   \2502                   ^^^^^^^\a   \2575 \a   scss\\utils\\mixins.scss 9:18  font-face()\a   scss\\config\\fonts.scss 4:1   @import\a   scss\\index.scss 4:9          root stylesheet";
+}
