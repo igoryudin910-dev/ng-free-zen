@@ -1,0 +1,184 @@
+/*header*/
+
+@import '/scss/config/vars.scss';
+
+.header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: #000;
+  background: #fff;
+
+  @media(min-width: $breakpoint-lg) {
+    height: 70px;
+    box-shadow: 0px 0px 15px;
+  }
+}
+
+.header.dark {
+  color: #fff;
+  background: #333;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  border-bottom: solid 1px #aaa;
+  box-shadow: 0px 0px 15px;
+
+  @media(min-width: $breakpoint-lg) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+
+  @media(min-width: $breakpoint-md) {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    max-width: 930px;
+    height: 70px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $breakpoint-xl) {
+    max-width: 1110px;
+  }
+}
+
+.header__logo {
+  height: 30px;
+  width: 77px;
+  color: currentColor;
+  z-index: 3;
+
+  @media(min-width: $breakpoint-lg) {
+    height: 40px;
+    width: 102px;
+    margin-right: auto;
+  }
+}
+
+.header__logo svg {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  fill: currentColor;
+}
+
+.header__buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+
+  @media(min-width: $breakpoint-lg) {
+    margin-left: 40px;
+  }
+}
+
+.header__lang {
+  height: 30px;
+  color: currentColor;
+  background: inherit;
+  border: solid 1px currentColor;
+  border-radius: 4px;
+
+  @media (min-width: $breakpoint-lg) {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+.header__theme {
+  margin-left: 20px;
+  width: 26px;
+  height: 26px;
+  color: currentColor;
+
+  @media (min-width: $breakpoint-lg) {
+    argin-left: 20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin-left: 50px;
+  }
+}
+
+.header__theme svg {
+  fill: currentColor;
+}
+
+.header__burger {
+  margin-left: 20px;
+  height: 20px;
+  width: 30px;
+  position: relative;
+  color: currentColor;
+
+  @media(min-width: $breakpoint-lg) {
+    display: none;
+  }
+}
+
+.header__burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+}
+
+.header__burger::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+}
+
+.header__burger::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+}
+
+.header__burger.active::before {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.header__burger.active span {
+  opacity: 0;
+}
+
+.header__burger.active::after {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}

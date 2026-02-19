@@ -1,5 +1,6 @@
+/* reset */
 *,
-*::before, 
+*::before,
 *::after {
   margin: 0;
   padding: 0;
@@ -43,3 +44,5 @@ select {
   border: none;
   outline: none;
 }
+
+/*# sourceMappingURL=reset.css.map */

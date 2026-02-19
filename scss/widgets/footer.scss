@@ -1,0 +1,91 @@
+/*footer*/
+
+@import '/scss/config/vars.scss';
+
+.footer {
+  background: #484848;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  padding: 30px 15px;
+}
+
+.footer__wrapper {
+
+  @media(min-width: $breakpoint-md) {
+    width: 690px;
+    margin: auto;
+    padding-left: 0;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    width: 927px;
+  }
+
+  @media(min-width: $breakpoint-xl) {
+    width: 1112px;
+  }
+}
+
+.footer__columns {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__info {
+
+  @media(min-width: $breakpoint-md) {
+    display: flex;
+    max-width: 690px;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    display: flex;
+    max-width: 927px;
+  }
+}
+
+.footer__logo {
+  max-width: 216px;
+}
+
+.footer__copy {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  font-style: normal;
+
+  @media(min-width: $breakpoint-md) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media(min-width: $breakpoint-xl) {
+    font-size: 16px;
+  }
+}
+
+.footer__dev {
+
+  @media(min-width: $breakpoint-md) {
+    margin-right: 0;
+  }
+}
+
+.footer__developer {
+  width: 130px;
+  height: 46px;
+  display: block;
+  margin: 10px auto 0px;
+
+  @media(min-width: $breakpoint-md) {
+    width: 160px;
+    height: 60px;
+    margin-left: 30px;
+  }
+ }

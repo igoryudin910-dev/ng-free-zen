@@ -1,0 +1,22 @@
+/* Error: Undefined mixin.
+ *   ,
+ * 4 | / @include font_face(
+ * 5 | |   '../assets/fonts/Nunito',
+ * 6 | |   'Nunito-Regular',
+ * 7 | |   'Nunito',
+ * 8 | |   400
+ * 9 | | );
+ *   | '-^
+ *   '
+ *   scss\config\fonts.scss 4:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502  \250c  @include font_face(\a 5 \2502  \2502    '../assets/fonts/Nunito',\a 6 \2502  \2502    'Nunito-Regular',\a 7 \2502  \2502    'Nunito',\a 8 \2502  \2502    400\a 9 \2502  \2502  );\a   \2502  \2514 \2500 ^\a   \2575 \a   scss\\config\\fonts.scss 4:1  root stylesheet";
+}

@@ -1,0 +1,59 @@
+/*menu*/
+
+.header__menu {
+  position: fixed;
+  top: -150%;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background: #fff;
+  transition: all 0.5s;
+  visibility: hidden;
+
+  @media(min-width: $breakpoint-lg) {
+    width: 530px;
+   flex-direction: row;
+   margin-right: 0;
+   overflow-y: visible;
+   position: relative;
+   top: 0;
+   visibility: visible;
+   margin-left: auto;
+   background: inherit;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    width: 567px;
+  }
+}
+  
+.header__menu.active {
+  top: 50px;
+  bottom: 0;
+  overflow-y: scroll;
+  visibility: visible;
+}
+
+.header__menu-item {
+  font-size: 24px;
+  border-bottom: 1px solid #aaa;
+
+  @media(min-width: $breakpoint-lg) {
+    font-size: 10px;
+    margin-left: 10px;
+    border-bottom: none;
+  }
+}
+
+.header__menu-item a {
+  display: block;
+  padding: 23px 15px;
+  font-size: 24px;
+  width: 100%;
+
+  @media(min-width: $breakpoint-lg) {
+    font-size: 20px;
+  }
+}
