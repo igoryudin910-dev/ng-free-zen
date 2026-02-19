@@ -1,0 +1,54 @@
+/*clients*/
+
+@import 'vars';
+
+.clients {
+  background: inherit;
+  padding: 30px 15px;
+}
+
+.clients__title {
+  display: none;
+}
+
+.clients__wrapper {
+
+  @media(min-width: $breakpoint-md) {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  @media(min-width: $breakpoint-lg) {
+    width: 930px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    width: 1110px;
+    margin: 0 auto;
+  }
+}
+
+.clients__brands {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    display: grid;
+    gap: 43px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
